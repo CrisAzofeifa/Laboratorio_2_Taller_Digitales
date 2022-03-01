@@ -1,0 +1,5 @@
+module main(input logic X,Z,R,
+				output logic U);
+		assign X = U;
+
+endmodule
