@@ -1,0 +1,9 @@
+module deco(input logic A,B,C,D,E,
+				output logic G,H,I,J,K,L,M);
+
+		assign G = (~B&C&D&E)|(~A&B&~C&~D)|(~A&B&~C&E)|(A&~B&C&~D&~E)|(A&B&C&~D&E);
+		assign H = (~B&~C&E)|(~A&~C&D)|(~B&~C&D)|(~A&C&~D)|(~A&B&~E)|(A&~C&~D)|(A&B&C&D);
+		
+
+
+endmodule
