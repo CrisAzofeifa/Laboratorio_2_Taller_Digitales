@@ -1,0 +1,60 @@
+module TestBenchCounter2Bits;
+	parameter N1 = 2;
+	parameter N2 = 4;
+	parameter N3 = 6;
+	logic clock, reset;
+	
+	logic [N1 - 1 : 0] count2;
+	logic [N2 - 1 : 0] count4;
+	logic [N3 - 1 : 0] count6;
+	
+	CounterNBits counterNBits2(clock, reset, count2);
+	CounterNBits counterNBits4(clock, reset, count4);
+	CounterNBits counterNBits6(clock, reset, count6);
+	
+	initial begin
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		clock = 0;
+		reset = 1;
+		#40;
+		
+		
+		
+	end
+	
+endmodule

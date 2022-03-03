@@ -1,0 +1,11 @@
+module CounterNBits #(parameter N = 6)
+	input logic clock;
+	input logic reset;
+	output logic [N-1:0] count;
+	
+	always @(posedge clock or posedge reset)
+	begin
+		if(reset)
+	end
+	
+end

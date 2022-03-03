@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at CounterNBits.sv(8): always construct contains both blocking and non-blocking assignments File: C:/Users/ronny/Documents/FPGA Devices/Lab2/Experimento3/CounterNBits.sv Line: 8
