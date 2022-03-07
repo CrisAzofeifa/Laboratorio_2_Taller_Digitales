@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun Feb 27 20:46:01 2022
+Analysis & Elaboration Status : Successful - Sun Mar  6 19:27:32 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : Deco
-Top-level Entity Name : Deco
+Top-level Entity Name : deco_TB
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
