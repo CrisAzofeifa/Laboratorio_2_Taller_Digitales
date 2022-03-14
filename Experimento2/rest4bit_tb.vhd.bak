@@ -1,0 +1,35 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity rest4bit_tb is
+end entity;
+
+architecture arch of rest4bit_tb is
+
+    component rest4bit is
+		port(A4,B4: in bit_vector(3 downto 0);-- entradas 4 bits
+				Sf: out bit_vector(4 downto 0));-- salida 5 bits (1 borrow y 4 de resultado)
+    end component;
+
+    signal A, B: bit_vector (3 downto 0);
+	 signal Resta : bit_vector (4 downto 0);
+
+begin
+
+    unit_under_test : rest4bit port map (
+        Sf => Resta,
+
+        A4 => A,
+        B4 => B
+    );
+
+    generate_signals : process
+    begin
+        A <= "1100"; B <= "0001"; wait for 10 ns;
+		  A <= "0100"; B <= "0001"; wait for 10 ns;
+		  A <= "1111"; B <= "0001"; wait for 10 ns;
+		  A <= "0000"; B <= "0001"; wait for 10 ns;
+        wait;
+    end process;
+
+end architecture;

@@ -1,0 +1,123 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/simulation/modelsim
+Erest1bit
+Z1 w1646876707
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest1bit.vhd
+Z5 FC:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest1bit.vhd
+l0
+L6
+V06Ym`SIZRUDX>f:XG_2`C3
+!s100 UXddQJkW0jn^Thoknm;@O0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1646887789
+!i10b 1
+Z8 !s108 1646887789.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest1bit.vhd|
+Z10 !s107 C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest1bit.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astructural
+R2
+R3
+DEx4 work 8 rest1bit 0 22 06Ym`SIZRUDX>f:XG_2`C3
+l14
+L11
+VnPGna:fcGCz51bkj_U7A61
+!s100 nNfefF3hm6D]zKJZfhf>^1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Erest4bit
+Z13 w1646879610
+R0
+Z14 8C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit.vhd
+Z15 FC:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit.vhd
+l0
+L3
+VF1iU@5;Q1UjU9c;cC;UBC0
+!s100 7nR;kZN@2E2m6zf3d_9FC3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit.vhd|
+Z17 !s107 C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit.vhd|
+!i113 1
+R11
+R12
+Astructural
+DEx4 work 8 rest4bit 0 22 F1iU@5;Q1UjU9c;cC;UBC0
+l18
+L10
+V5jVme_9M^boMC?@DFh>eO3
+!s100 PSeg`h;Ym7_0iW07?ll]j1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Erest4bit_tb
+Z18 w1646887737
+R2
+R3
+R0
+Z19 8C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit_tb.vhd
+Z20 FC:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit_tb.vhd
+l0
+L4
+Vfk3b3aQiQeXCK??V8@^2h1
+!s100 6R0<0la_B_oOBPUG=Fb240
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit_tb.vhd|
+Z22 !s107 C:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/rest4bit_tb.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 11 rest4bit_tb 0 22 fk3b3aQiQeXCK??V8@^2h1
+l19
+L7
+V;IVQXj_NgV8@GGZI:]Yfc2
+!s100 LlWW7U[ZP4XkB`Z`_J6;B0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12

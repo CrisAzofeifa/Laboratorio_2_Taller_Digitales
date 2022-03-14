@@ -1,0 +1,395 @@
+Analysis & Synthesis report for rest1
+Mon Mar 14 01:45:29 2022
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "BCD7seg:BCD7seg3"
+ 12. Port Connectivity Checks: "BCD7seg:BCD7seg2"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Mar 14 01:45:29 2022       ;
+; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Revision Name                   ; rest1                                       ;
+; Top-level Entity Name           ; main                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 30                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; main               ; rest1              ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; rest1bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit.vhd    ;         ;
+; rest4bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd    ;         ;
+; decoBCD.vhd                      ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/decoBCD.vhd     ;         ;
+; BCD7seg.vhd                      ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/BCD7seg.vhd     ;         ;
+; main.vhd                         ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd        ;         ;
+; complemento.vhd                  ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                     ;
++---------------------------------------------+-----------------------------------+
+; Resource                                    ; Usage                             ;
++---------------------------------------------+-----------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 13                                ;
+;                                             ;                                   ;
+; Combinational ALUT usage for logic          ; 21                                ;
+;     -- 7 input functions                    ; 1                                 ;
+;     -- 6 input functions                    ; 3                                 ;
+;     -- 5 input functions                    ; 3                                 ;
+;     -- 4 input functions                    ; 8                                 ;
+;     -- <=3 input functions                  ; 6                                 ;
+;                                             ;                                   ;
+; Dedicated logic registers                   ; 0                                 ;
+;                                             ;                                   ;
+; I/O pins                                    ; 30                                ;
+;                                             ;                                   ;
+; Total DSP Blocks                            ; 0                                 ;
+;                                             ;                                   ;
+; Maximum fan-out node                        ; complemento:compA2|restaComp[1]~3 ;
+; Maximum fan-out                             ; 8                                 ;
+; Total fan-out                               ; 131                               ;
+; Average fan-out                             ; 1.62                              ;
++---------------------------------------------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+-------------+--------------+
+; |main                      ; 21 (0)              ; 0 (0)                     ; 0                 ; 0          ; 30   ; 0            ; |main                               ; main        ; work         ;
+;    |BCD7seg:BCD7seg1|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|BCD7seg:BCD7seg1              ; BCD7seg     ; work         ;
+;    |complemento:compA2|    ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|complemento:compA2            ; complemento ; work         ;
+;    |decoBCD:decoBCDD|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|decoBCD:decoBCDD              ; decoBCD     ; work         ;
+;    |rest4bit:rest4|        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4bit:rest4                ; rest4bit    ; work         ;
+;       |rest1bit:rest1|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4bit:rest4|rest1bit:rest1 ; rest1bit    ; work         ;
+;       |rest1bit:rest3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4bit:rest4|rest1bit:rest3 ; rest1bit    ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                              ;
++----------------------------------------------------+------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                ; Free of Timing Hazards ;
++----------------------------------------------------+------------------------------------+------------------------+
+; complemento:compA2|restaAux[1]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
+; complemento:compA2|restaAux[2]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
+; complemento:compA2|restaAux[3]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
+; complemento:compA2|restaAux[0]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                                    ;                        ;
++----------------------------------------------------+------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|BCD7seg:BCD7seg1|salida[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "BCD7seg:BCD7seg3" ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; entrada[3] ; Input ; Info     ; Stuck at VCC ;
+; entrada[2] ; Input ; Info     ; Stuck at GND ;
+; entrada[1] ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "BCD7seg:BCD7seg2"    ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; entrada[3..1] ; Input ; Info     ; Stuck at GND ;
++---------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 24                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 23                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 3                           ;
+; boundary_port         ; 30                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.08                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Mon Mar 14 01:45:22 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rest1 -c rest1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file rest1bit.vhd
+    Info (12022): Found design unit 1: rest1bit-structural File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit.vhd Line: 11
+    Info (12023): Found entity 1: rest1bit File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file rest1bit_tb.vhd
+    Info (12022): Found design unit 1: rest1bit_tb-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit_tb.vhd Line: 8
+    Info (12023): Found entity 1: rest1bit_tb File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit_tb.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file rest4bit.vhd
+    Info (12022): Found design unit 1: rest4bit-structural File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd Line: 10
+    Info (12023): Found entity 1: rest4bit File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file rest4bit_tb.vhd
+    Info (12022): Found design unit 1: rest4bit_tb-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit_tb.vhd Line: 7
+    Info (12023): Found entity 1: rest4bit_tb File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit_tb.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file decobcd.vhd
+    Info (12022): Found design unit 1: decoBCD-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/decoBCD.vhd Line: 12
+    Info (12023): Found entity 1: decoBCD File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/decoBCD.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file bcd7seg.vhd
+    Info (12022): Found design unit 1: BCD7seg-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/BCD7seg.vhd Line: 12
+    Info (12023): Found entity 1: BCD7seg File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/BCD7seg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
+    Info (12022): Found design unit 1: main-structural File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 10
+    Info (12023): Found entity 1: main File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file complemento.vhd
+    Info (12022): Found design unit 1: complemento-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 15
+    Info (12023): Found entity 1: complemento File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 8
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "rest4bit" for hierarchy "rest4bit:rest4" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 51
+Info (12128): Elaborating entity "rest1bit" for hierarchy "rest4bit:rest4|rest1bit:rest0" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd Line: 21
+Info (12128): Elaborating entity "complemento" for hierarchy "complemento:compA2" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at complemento.vhd(27): signal "borrowOut" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at complemento.vhd(29): signal "restaAux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at complemento.vhd(30): signal "restaAux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at complemento.vhd(31): signal "borrowOut" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at complemento.vhd(31): signal "restaAux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at complemento.vhd(34): signal "restaAux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 34
+Warning (10631): VHDL Process Statement warning at complemento.vhd(20): inferring latch(es) for signal or variable "restaAux", which holds its previous value in one or more paths through the process File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[0]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[1]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[2]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[3]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
+Info (12128): Elaborating entity "decoBCD" for hierarchy "decoBCD:decoBCDD" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 57
+Info (12128): Elaborating entity "BCD7seg" for hierarchy "BCD7seg:BCD7seg1" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 64
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Display2[0]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display2[4]" is stuck at GND File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display2[5]" is stuck at GND File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display3[1]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display3[2]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display3[3]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display3[4]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display3[5]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display3[6]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 21 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4902 megabytes
+    Info: Processing ended: Mon Mar 14 01:45:29 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:15
+
+
