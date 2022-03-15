@@ -8,27 +8,27 @@ Bi[1] => rest4bit:rest4.B[1]
 Bi[2] => rest4bit:rest4.B[2]
 Bi[3] => rest4bit:rest4.B[3]
 Bentrada => rest4bit:rest4.Bin
-Display1[0] <= BCD7seg:BCD7seg1.salida[0]
-Display1[1] <= BCD7seg:BCD7seg1.salida[1]
-Display1[2] <= BCD7seg:BCD7seg1.salida[2]
-Display1[3] <= BCD7seg:BCD7seg1.salida[3]
-Display1[4] <= BCD7seg:BCD7seg1.salida[4]
-Display1[5] <= BCD7seg:BCD7seg1.salida[5]
-Display1[6] <= BCD7seg:BCD7seg1.salida[6]
-Display2[0] <= BCD7seg:BCD7seg2.salida[0]
-Display2[1] <= BCD7seg:BCD7seg2.salida[1]
-Display2[2] <= BCD7seg:BCD7seg2.salida[2]
-Display2[3] <= BCD7seg:BCD7seg2.salida[3]
-Display2[4] <= BCD7seg:BCD7seg2.salida[4]
-Display2[5] <= BCD7seg:BCD7seg2.salida[5]
-Display2[6] <= BCD7seg:BCD7seg2.salida[6]
-Display3[0] <= BCD7seg:BCD7seg3.salida[0]
-Display3[1] <= BCD7seg:BCD7seg3.salida[1]
-Display3[2] <= BCD7seg:BCD7seg3.salida[2]
-Display3[3] <= BCD7seg:BCD7seg3.salida[3]
-Display3[4] <= BCD7seg:BCD7seg3.salida[4]
-Display3[5] <= BCD7seg:BCD7seg3.salida[5]
-Display3[6] <= BCD7seg:BCD7seg3.salida[6]
+Display1[0] << BCD7seg:BCD7seg1.salida[0]
+Display1[1] << BCD7seg:BCD7seg1.salida[1]
+Display1[2] << BCD7seg:BCD7seg1.salida[2]
+Display1[3] << BCD7seg:BCD7seg1.salida[3]
+Display1[4] << BCD7seg:BCD7seg1.salida[4]
+Display1[5] << BCD7seg:BCD7seg1.salida[5]
+Display1[6] << BCD7seg:BCD7seg1.salida[6]
+Display2[0] << BCD7seg:BCD7seg2.salida[0]
+Display2[1] << BCD7seg:BCD7seg2.salida[1]
+Display2[2] << BCD7seg:BCD7seg2.salida[2]
+Display2[3] << BCD7seg:BCD7seg2.salida[3]
+Display2[4] << BCD7seg:BCD7seg2.salida[4]
+Display2[5] << BCD7seg:BCD7seg2.salida[5]
+Display2[6] << BCD7seg:BCD7seg2.salida[6]
+Display3[0] << BCD7seg:BCD7seg3.salida[0]
+Display3[1] << BCD7seg:BCD7seg3.salida[1]
+Display3[2] << BCD7seg:BCD7seg3.salida[2]
+Display3[3] << BCD7seg:BCD7seg3.salida[3]
+Display3[4] << BCD7seg:BCD7seg3.salida[4]
+Display3[5] << BCD7seg:BCD7seg3.salida[5]
+Display3[6] << BCD7seg:BCD7seg3.salida[6]
 
 
 |main|rest4bit:rest4
@@ -105,31 +105,23 @@ Bout <= Bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|complemento:compA2
-resta[0] => restaAux1.DATAA
-resta[1] => restaAux1.DATAA
-resta[2] => restaAux1.DATAA
-resta[3] => restaAux1.DATAA
-resta[4] => restaAux1.OUTPUTSELECT
-resta[4] => restaAux1.OUTPUTSELECT
-resta[4] => restaAux1.OUTPUTSELECT
-resta[4] => restaAux1.OUTPUTSELECT
-resta[4] => restaAux23[0].LATCH_ENABLE
-resta[4] => restaAux23[1].LATCH_ENABLE
-resta[4] => restaAux23[2].LATCH_ENABLE
-resta[4] => restaAux23[3].LATCH_ENABLE
-resta[4] => restaAux22[0].LATCH_ENABLE
-resta[4] => restaAux22[1].LATCH_ENABLE
-resta[4] => restaAux22[2].LATCH_ENABLE
-resta[4] => restaAux22[3].LATCH_ENABLE
-resta[4] => restaAux[0].LATCH_ENABLE
-resta[4] => restaAux[1].LATCH_ENABLE
-resta[4] => restaAux[2].LATCH_ENABLE
-resta[4] => restaAux[3].LATCH_ENABLE
+resta[0] => restaAux.DATAA
+resta[0] => Add0.IN8
+resta[1] => restaAux.DATAA
+resta[1] => Add0.IN7
+resta[2] => restaAux.DATAA
+resta[2] => Add0.IN6
+resta[3] => restaAux.DATAA
+resta[3] => Add0.IN5
+resta[4] => restaAux.OUTPUTSELECT
+resta[4] => restaAux.OUTPUTSELECT
+resta[4] => restaAux.OUTPUTSELECT
+resta[4] => restaAux.OUTPUTSELECT
 resta[4] => restaComp[4].DATAIN
-restaComp[0] <= restaAux1.DB_MAX_OUTPUT_PORT_TYPE
-restaComp[1] <= restaAux1.DB_MAX_OUTPUT_PORT_TYPE
-restaComp[2] <= restaAux1.DB_MAX_OUTPUT_PORT_TYPE
-restaComp[3] <= restaAux1.DB_MAX_OUTPUT_PORT_TYPE
+restaComp[0] <= restaAux.DB_MAX_OUTPUT_PORT_TYPE
+restaComp[1] <= restaAux.DB_MAX_OUTPUT_PORT_TYPE
+restaComp[2] <= restaAux.DB_MAX_OUTPUT_PORT_TYPE
+restaComp[3] <= restaAux.DB_MAX_OUTPUT_PORT_TYPE
 restaComp[4] <= resta[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
