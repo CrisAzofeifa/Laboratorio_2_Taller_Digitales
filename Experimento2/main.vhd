@@ -14,11 +14,11 @@ end entity;
 architecture structural of main is
 
 
-	component rest4std_logic is
+	component rest4bit is
 	port(A, B: in std_logic_vector(3 downto 0);-- 4 entradas
 			Bin: in std_logic;
 			Sf: out std_logic_vector(4 downto 0));-- 5 salidas (1 borrow y 4 de resultado)
-	end component rest4std_logic;
+	end component rest4bit;
 	
 	component complemento is
 		port(resta: in std_logic_vector(4 downto 0);
@@ -49,10 +49,10 @@ architecture structural of main is
 
 	begin
 	 	 
-	 	--Sfauxmap: rest4std_logic
+	 	--Sfauxmap: rest4bit
 		--port map(A,B,Bin,sf=>sfaux);
 	
-		rest4: rest4std_logic
+		rest4: rest4bit
 			port map(A=>Ai,B=>Bi,Bin=>Bentrada,Sf=>Srcomp);
 
 		compA2: complemento

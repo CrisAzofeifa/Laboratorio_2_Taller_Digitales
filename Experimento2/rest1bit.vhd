@@ -3,12 +3,12 @@ use IEEE.std_logic_1164.all;
 
 -- Restador completo de 1 std_logic con borrow de entrada y salida
 
-entity rest1std_logic is
+entity rest1bit is
 	port(Ai,Bi,Bin: in std_logic;
 			S,Bout: out std_logic);
 end entity;
 
-architecture structural of rest1std_logic is
+architecture structural of rest1bit is
 	signal w1,w2,w3,w4: std_logic;
 	
 	begin

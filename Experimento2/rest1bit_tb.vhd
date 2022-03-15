@@ -1,23 +1,23 @@
--- Restador completo de 1 std_logic
+-- Restador completo de 1 bit
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity rest1std_logic_tb is
+entity rest1bit_tb is
 end entity;
 
-architecture arch of rest1std_logic_tb is
+architecture arch of rest1bit_tb is
 
-    component rest1std_logic is
-		port(Ai,Bi,Bin: in std_logic;
-				S,Bout: out std_logic);
+    component rest1bit is
+		port(Ai,Bi,Bin: in BIT;
+				S,Bout: out BIT);
     end component;
 
-    signal testVectEntrada : std_logic_vector (2 downto 0);
-    signal testRestOut, testBorrowOut : std_logic;
+    signal testVectEntrada : bit_vector (2 downto 0);
+    signal testRestOut, testBorrowOut : BIT;
 
 begin
 
-    unit_under_test: rest1std_logic port map (
+    unit_under_test: rest1bit port map (
         S => testRestOut,
         Bout => testBorrowOut,
         Bin => testVectEntrada(2),

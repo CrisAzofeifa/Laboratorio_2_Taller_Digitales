@@ -1,54 +1,54 @@
 |main
-Ai[0] => rest4std_logic:rest4.A[0]
-Ai[1] => rest4std_logic:rest4.A[1]
-Ai[2] => rest4std_logic:rest4.A[2]
-Ai[3] => rest4std_logic:rest4.A[3]
-Bi[0] => rest4std_logic:rest4.B[0]
-Bi[1] => rest4std_logic:rest4.B[1]
-Bi[2] => rest4std_logic:rest4.B[2]
-Bi[3] => rest4std_logic:rest4.B[3]
-Bentrada => rest4std_logic:rest4.Bin
-Display1[0] << BCD7seg:BCD7seg1.salida[0]
-Display1[1] << BCD7seg:BCD7seg1.salida[1]
-Display1[2] << BCD7seg:BCD7seg1.salida[2]
-Display1[3] << BCD7seg:BCD7seg1.salida[3]
-Display1[4] << BCD7seg:BCD7seg1.salida[4]
-Display1[5] << BCD7seg:BCD7seg1.salida[5]
-Display1[6] << BCD7seg:BCD7seg1.salida[6]
-Display2[0] << BCD7seg:BCD7seg2.salida[0]
-Display2[1] << BCD7seg:BCD7seg2.salida[1]
-Display2[2] << BCD7seg:BCD7seg2.salida[2]
-Display2[3] << BCD7seg:BCD7seg2.salida[3]
-Display2[4] << BCD7seg:BCD7seg2.salida[4]
-Display2[5] << BCD7seg:BCD7seg2.salida[5]
-Display2[6] << BCD7seg:BCD7seg2.salida[6]
-Display3[0] << BCD7seg:BCD7seg3.salida[0]
-Display3[1] << BCD7seg:BCD7seg3.salida[1]
-Display3[2] << BCD7seg:BCD7seg3.salida[2]
-Display3[3] << BCD7seg:BCD7seg3.salida[3]
-Display3[4] << BCD7seg:BCD7seg3.salida[4]
-Display3[5] << BCD7seg:BCD7seg3.salida[5]
-Display3[6] << BCD7seg:BCD7seg3.salida[6]
+Ai[0] => rest4bit:rest4.A[0]
+Ai[1] => rest4bit:rest4.A[1]
+Ai[2] => rest4bit:rest4.A[2]
+Ai[3] => rest4bit:rest4.A[3]
+Bi[0] => rest4bit:rest4.B[0]
+Bi[1] => rest4bit:rest4.B[1]
+Bi[2] => rest4bit:rest4.B[2]
+Bi[3] => rest4bit:rest4.B[3]
+Bentrada => rest4bit:rest4.Bin
+Display1[0] <= BCD7seg:BCD7seg1.salida[0]
+Display1[1] <= BCD7seg:BCD7seg1.salida[1]
+Display1[2] <= BCD7seg:BCD7seg1.salida[2]
+Display1[3] <= BCD7seg:BCD7seg1.salida[3]
+Display1[4] <= BCD7seg:BCD7seg1.salida[4]
+Display1[5] <= BCD7seg:BCD7seg1.salida[5]
+Display1[6] <= BCD7seg:BCD7seg1.salida[6]
+Display2[0] <= BCD7seg:BCD7seg2.salida[0]
+Display2[1] <= BCD7seg:BCD7seg2.salida[1]
+Display2[2] <= BCD7seg:BCD7seg2.salida[2]
+Display2[3] <= BCD7seg:BCD7seg2.salida[3]
+Display2[4] <= BCD7seg:BCD7seg2.salida[4]
+Display2[5] <= BCD7seg:BCD7seg2.salida[5]
+Display2[6] <= BCD7seg:BCD7seg2.salida[6]
+Display3[0] <= BCD7seg:BCD7seg3.salida[0]
+Display3[1] <= BCD7seg:BCD7seg3.salida[1]
+Display3[2] <= BCD7seg:BCD7seg3.salida[2]
+Display3[3] <= BCD7seg:BCD7seg3.salida[3]
+Display3[4] <= BCD7seg:BCD7seg3.salida[4]
+Display3[5] <= BCD7seg:BCD7seg3.salida[5]
+Display3[6] <= BCD7seg:BCD7seg3.salida[6]
 
 
-|main|rest4std_logic:rest4
-A[0] => rest1std_logic:rest0.Ai
-A[1] => rest1std_logic:rest1.Ai
-A[2] => rest1std_logic:rest2.Ai
-A[3] => rest1std_logic:rest3.Ai
-B[0] => rest1std_logic:rest0.Bi
-B[1] => rest1std_logic:rest1.Bi
-B[2] => rest1std_logic:rest2.Bi
-B[3] => rest1std_logic:rest3.Bi
-Bin => rest1std_logic:rest0.Bin
-Sf[0] <= rest1std_logic:rest0.S
-Sf[1] <= rest1std_logic:rest1.S
-Sf[2] <= rest1std_logic:rest2.S
-Sf[3] <= rest1std_logic:rest3.S
-Sf[4] <= rest1std_logic:rest3.Bout
+|main|rest4bit:rest4
+A[0] => rest1bit:rest0.Ai
+A[1] => rest1bit:rest1.Ai
+A[2] => rest1bit:rest2.Ai
+A[3] => rest1bit:rest3.Ai
+B[0] => rest1bit:rest0.Bi
+B[1] => rest1bit:rest1.Bi
+B[2] => rest1bit:rest2.Bi
+B[3] => rest1bit:rest3.Bi
+Bin => rest1bit:rest0.Bin
+Sf[0] <= rest1bit:rest0.S
+Sf[1] <= rest1bit:rest1.S
+Sf[2] <= rest1bit:rest2.S
+Sf[3] <= rest1bit:rest3.S
+Sf[4] <= rest1bit:rest3.Bout
 
 
-|main|rest4std_logic:rest4|rest1std_logic:rest0
+|main|rest4bit:rest4|rest1bit:rest0
 Ai => w1.IN0
 Ai => w2.IN0
 Ai => w3.IN0
@@ -62,7 +62,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Bout <= Bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|rest4std_logic:rest4|rest1std_logic:rest1
+|main|rest4bit:rest4|rest1bit:rest1
 Ai => w1.IN0
 Ai => w2.IN0
 Ai => w3.IN0
@@ -76,7 +76,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Bout <= Bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|rest4std_logic:rest4|rest1std_logic:rest2
+|main|rest4bit:rest4|rest1bit:rest2
 Ai => w1.IN0
 Ai => w2.IN0
 Ai => w3.IN0
@@ -90,7 +90,7 @@ S <= S.DB_MAX_OUTPUT_PORT_TYPE
 Bout <= Bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|rest4std_logic:rest4|rest1std_logic:rest3
+|main|rest4bit:rest4|rest1bit:rest3
 Ai => w1.IN0
 Ai => w2.IN0
 Ai => w3.IN0
@@ -113,6 +113,14 @@ resta[4] => restaAux1.OUTPUTSELECT
 resta[4] => restaAux1.OUTPUTSELECT
 resta[4] => restaAux1.OUTPUTSELECT
 resta[4] => restaAux1.OUTPUTSELECT
+resta[4] => restaAux23[0].LATCH_ENABLE
+resta[4] => restaAux23[1].LATCH_ENABLE
+resta[4] => restaAux23[2].LATCH_ENABLE
+resta[4] => restaAux23[3].LATCH_ENABLE
+resta[4] => restaAux22[0].LATCH_ENABLE
+resta[4] => restaAux22[1].LATCH_ENABLE
+resta[4] => restaAux22[2].LATCH_ENABLE
+resta[4] => restaAux22[3].LATCH_ENABLE
 resta[4] => restaAux[0].LATCH_ENABLE
 resta[4] => restaAux[1].LATCH_ENABLE
 resta[4] => restaAux[2].LATCH_ENABLE
