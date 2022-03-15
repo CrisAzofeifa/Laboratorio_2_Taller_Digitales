@@ -7,15 +7,15 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/simulation/modelsim
+dC:/Users/USUARIO/Desktop/Computadores/IS2022/Taller/Laboratorio2/Pruebas/simulation/modelsim
 Elpm_abs
-Z1 w1634850468
-Z2 DPx4 work 14 lpm_components 0 22 AbkdFCUKnVd=lUNP?IBO>1
-Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z4 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
+Z0 w1634850468
+Z1 DPx4 work 14 lpm_components 0 22 AbkdFCUKnVd=lUNP?IBO>1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 dC:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/simulation/modelsim
 Z7 8c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.vhd
 Z8 Fc:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.vhd
 l0
@@ -24,20 +24,20 @@ V;LNYW[e9[=;cnlcoi>PcU0
 !s100 P]AL=zo63a8aOB]JQ36Vg1
 Z9 OV;C;10.5b;63
 31
-Z10 !s110 1646887774
+Z10 !s110 1647322814
 !i10b 1
-Z11 !s108 1646887773.000000
+Z11 !s108 1647322814.000000
 Z12 !s90 -reportprogress|300|-93|-work|lpm|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.vhd|
 Z13 !s107 c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.vhd|
 !i113 1
 Z14 o-93 -work lpm
 Z15 tExplicit 1 CvgOpt 0
 Alpm_syn
+R1
 R2
 R3
 R4
 R5
-R6
 Z16 DEx4 work 7 lpm_abs 0 22 ;LNYW[e9[=;cnlcoi>PcU0
 Z17 l3122
 Z18 L3121
@@ -54,16 +54,16 @@ R13
 R14
 R15
 Elpm_add_sub
-R1
+R0
 Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z22 DEx4 work 20 lpm_add_sub_unsigned 0 22 _Tk0ChYRVMa_IQYdTbQHY2
-R3
-R4
-Z23 DEx4 work 18 lpm_add_sub_signed 0 22 X>IS:_:Zj^Am3<:ZDObf]3
 R2
+R3
+Z23 DEx4 work 18 lpm_add_sub_signed 0 22 X>IS:_:Zj^Am3<:ZDObf]3
+R1
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -82,11 +82,11 @@ R14
 R15
 Alpm_syn
 R21
-R3
-R4
 R2
+R3
+R1
+R4
 R5
-R6
 Z24 DEx4 work 11 lpm_add_sub 0 22 B4U<ND7:B3mQ<kSdBDP?I3
 Z25 l1971
 Z26 L1923
@@ -103,13 +103,13 @@ R13
 R14
 R15
 Elpm_add_sub_signed
+R0
 R1
 R2
 R3
 R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -127,11 +127,11 @@ R13
 R14
 R15
 Alpm_syn
+R1
 R2
 R3
 R4
 R5
-R6
 R23
 Z29 l1625
 Z30 L1617
@@ -148,13 +148,13 @@ R13
 R14
 R15
 Elpm_add_sub_unsigned
+R0
 R1
 R2
-R3
 R21
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -172,11 +172,11 @@ R13
 R14
 R15
 Alpm_syn
+R1
 R2
-R3
 R21
+R4
 R5
-R6
 R22
 Z33 l1787
 Z34 L1779
@@ -193,11 +193,11 @@ R13
 R14
 R15
 Elpm_and
+R0
 R1
-R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -215,9 +215,9 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
+R4
 R5
-R6
 Z37 DEx4 work 7 lpm_and 0 22 `C<[^NmYaQFeKIHA2<bnn1
 l752
 L747
@@ -234,11 +234,11 @@ R13
 R14
 R15
 Elpm_bipad
+R0
 R1
-R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -247,7 +247,7 @@ VEA3PI@8]gbe03[dA9i2^01
 !s100 2>mRm4lA1^8UaZ53@6iTc1
 R9
 31
-R10
+Z40 !s110 1647322815
 !i10b 1
 R11
 R12
@@ -256,17 +256,17 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
+R4
 R5
-R6
-Z40 DEx4 work 9 lpm_bipad 0 22 EA3PI@8]gbe03[dA9i2^01
-Z41 l8639
-Z42 L8635
-Z43 V0e2Jl9i>0>D1d`8T>Oh041
-Z44 !s100 NjCS;GUHJUZYNYF7S63oJ0
+Z41 DEx4 work 9 lpm_bipad 0 22 EA3PI@8]gbe03[dA9i2^01
+Z42 l8639
+Z43 L8635
+Z44 V0e2Jl9i>0>D1d`8T>Oh041
+Z45 !s100 NjCS;GUHJUZYNYF7S63oJ0
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -275,13 +275,13 @@ R13
 R14
 R15
 Elpm_bustri
+R0
 R1
 R2
-R3
 R21
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -299,16 +299,16 @@ R13
 R14
 R15
 Alpm_syn
+R1
 R2
-R3
 R21
+R4
 R5
-R6
-Z45 DEx4 work 10 lpm_bustri 0 22 96Gbhl0[<UNeRa6aI]eXV1
-Z46 l1042
-Z47 L1041
-Z48 VOX]1oG3065c8LlEKKlIB91
-Z49 !s100 BlA]j4lB:JbFRCh6ERoGi2
+Z46 DEx4 work 10 lpm_bustri 0 22 96Gbhl0[<UNeRa6aI]eXV1
+Z47 l1042
+Z48 L1041
+Z49 VOX]1oG3065c8LlEKKlIB91
+Z50 !s100 BlA]j4lB:JbFRCh6ERoGi2
 R9
 31
 R10
@@ -320,13 +320,13 @@ R13
 R14
 R15
 Elpm_clshift
+R0
 R1
-R2
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -344,16 +344,16 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
-Z50 DEx4 work 11 lpm_clshift 0 22 O9N@IQ:zQYSz9dVgVAF950
-Z51 l1386
-Z52 L1378
-Z53 Vj?PfDBJUfG:Fe;9=k=Xkm0
-Z54 !s100 h36b77bl2WVnXA80C5h030
+Z51 DEx4 work 11 lpm_clshift 0 22 O9N@IQ:zQYSz9dVgVAF950
+Z52 l1386
+Z53 L1378
+Z54 Vj?PfDBJUfG:Fe;9=k=Xkm0
+Z55 !s100 h36b77bl2WVnXA80C5h030
 R9
 31
 R10
@@ -365,10 +365,10 @@ R13
 R14
 R15
 Plpm_common_conversion
+R4
 R5
-R6
-R1
 R0
+R6
 R7
 R8
 l0
@@ -378,7 +378,7 @@ V7V5cBnnlB624^;i[>XLSF0
 R9
 31
 b1
-Z55 !s110 1646887773
+R10
 !i10b 1
 R11
 R12
@@ -388,15 +388,15 @@ R14
 R15
 Bbody
 Z56 DPx4 work 21 lpm_common_conversion 0 22 7V5cBnnlB624^;i[>XLSF0
+R4
 R5
-R6
 l0
 L57
 Z57 Vo8UCQlD]MeQ4@lUQ[F>PP1
 Z58 !s100 <CWdDD>P8>OcDdKBd`bDF2
 R9
 31
-R55
+R10
 !i10b 1
 R11
 R12
@@ -405,16 +405,16 @@ R13
 R14
 R15
 Elpm_compare
-R1
+R0
 R21
 Z59 DEx4 work 20 lpm_compare_unsigned 0 22 HZ1LFoWzE`nRFlGi[RCBl3
-R4
 R3
-Z60 DEx4 work 18 lpm_compare_signed 0 22 eQ[3NMSMl:d8[l<]ofmC_1
 R2
+Z60 DEx4 work 18 lpm_compare_signed 0 22 eQ[3NMSMl:d8[l<]ofmC_1
+R1
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -433,11 +433,11 @@ R14
 R15
 Alpm_syn
 R21
-R4
 R3
 R2
+R1
+R4
 R5
-R6
 Z61 DEx4 work 11 lpm_compare 0 22 K_NgJ]A8O6Jh[M?4nGdzB3
 Z62 l2456
 Z63 L2408
@@ -454,13 +454,13 @@ R13
 R14
 R15
 Elpm_compare_signed
+R0
 R1
+R3
 R2
 R4
-R3
 R5
 R6
-R0
 R7
 R8
 l0
@@ -478,11 +478,11 @@ R13
 R14
 R15
 Alpm_syn
+R1
+R3
 R2
 R4
-R3
 R5
-R6
 R60
 Z66 l2102
 Z67 L2101
@@ -499,13 +499,13 @@ R13
 R14
 R15
 Elpm_compare_unsigned
+R0
 R1
-R2
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -523,11 +523,11 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 R59
 Z70 l2251
 Z71 L2250
@@ -544,10 +544,10 @@ R13
 R14
 R15
 Plpm_components
+R4
 R5
-R6
 w1634839844
-R0
+R6
 8c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220pack.vhd
 Fc:/intelfpga_lite/21.1/quartus/eda/sim_lib/220pack.vhd
 l0
@@ -556,7 +556,7 @@ VAbkdFCUKnVd=lUNP?IBO>1
 !s100 c8YJbzV5TbaKg6O15]bi50
 R9
 31
-R55
+R10
 !i10b 1
 R11
 !s90 -reportprogress|300|-93|-work|lpm|c:/intelfpga_lite/21.1/quartus/eda/sim_lib/220pack.vhd|
@@ -565,13 +565,13 @@ R11
 R14
 R15
 Elpm_constant
+R0
 R1
-R2
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -589,11 +589,11 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z74 DEx4 work 12 lpm_constant 0 22 74S8]8k2[<b5aT>i3^?e41
 l635
 L634
@@ -610,14 +610,14 @@ R13
 R14
 R15
 Elpm_counter
-R1
+R0
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -636,11 +636,11 @@ R14
 R15
 Alpm_syn
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z77 DEx4 work 11 lpm_counter 0 22 09oQU7GeaLJ3AhK2fBO^:2
 Z78 l3267
 Z79 L3217
@@ -657,13 +657,13 @@ R13
 R14
 R15
 Elpm_decode
+R0
 R1
 R2
-R3
 R21
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -681,11 +681,11 @@ R13
 R14
 R15
 Alpm_syn
+R1
 R2
-R3
 R21
+R4
 R5
-R6
 Z82 DEx4 work 10 lpm_decode 0 22 3hZLN>aRbW[>1@=NoB3NG1
 Z83 l1250
 Z84 L1245
@@ -702,10 +702,10 @@ R13
 R14
 R15
 Plpm_device_families
+R4
 R5
-R6
-R1
 R0
+R6
 R7
 R8
 l0
@@ -725,8 +725,8 @@ R14
 R15
 Bbody
 Z87 DPx4 work 19 lpm_device_families 0 22 Pn5mNk`83E;ISRB[bZE1I1
+R4
 R5
-R6
 l0
 L427
 Z88 VDCYB3kC4naJdI2ESZ6FzR1
@@ -742,14 +742,14 @@ R13
 R14
 R15
 Elpm_divide
-R1
+R0
 Z90 DPx4 work 19 lpm_hint_evaluation 0 22 _a<2DEEN737_g4J=TU7ZB2
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -768,11 +768,11 @@ R14
 R15
 Abehave
 R90
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z91 DEx4 work 10 lpm_divide 0 22 ]T7[zj@4i]IeBPTaR@k3W0
 Z92 l2851
 Z93 L2797
@@ -789,13 +789,13 @@ R13
 R14
 R15
 Elpm_ff
-R1
+R0
 R56
+R1
 R2
-R3
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -814,10 +814,10 @@ R14
 R15
 Alpm_syn
 R56
+R1
 R2
-R3
+R4
 R5
-R6
 Z96 DEx4 work 6 lpm_ff 0 22 EMLZb`YJ:Y2lT_M1nh4Xj3
 Z97 l3702
 Z98 L3656
@@ -834,14 +834,14 @@ R13
 R14
 R15
 Elpm_fifo
-R1
+R0
 R90
 R87
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -850,7 +850,7 @@ VGC6kVahUdARjaNXXZjT3Z2
 !s100 Bh:;fKET2_Lj<>8b>D9=>0
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -862,9 +862,9 @@ Abehavior
 R90
 R87
 R21
-R3
+R2
+R4
 R5
-R6
 Z101 DEx4 work 8 lpm_fifo 0 22 GC6kVahUdARjaNXXZjT3Z2
 Z102 l7318
 Z103 L7252
@@ -872,7 +872,7 @@ Z104 V]?JHUKWgQ0UQQOQACX;HK2
 Z105 !s100 ik@V;P_2=:3Zj`a?nG55A2
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -881,16 +881,16 @@ R13
 R14
 R15
 Elpm_fifo_dc
-R1
+R0
 R87
 Z106 DEx4 work 17 lpm_fifo_dc_async 0 22 eWgFAFemn?D=h]a^PZehk3
 R90
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -899,7 +899,7 @@ VgKY9WX>3PIBWi>zJ0i9?@1
 !s100 WjTHAli5noN:UkLYd[fKa0
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -910,11 +910,11 @@ R15
 Abehavior
 R87
 R90
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z107 DEx4 work 11 lpm_fifo_dc 0 22 gKY9WX>3PIBWi>zJ0i9?@1
 Z108 l8458
 Z109 L8362
@@ -922,7 +922,7 @@ Z110 VQ>3H2j=@fUa;FM^]ezeff1
 Z111 !s100 :61Zfne;XbE:IfS<mEY932
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -931,16 +931,16 @@ R13
 R14
 R15
 Elpm_fifo_dc_async
-R1
+R0
 Z112 DEx4 work 19 lpm_fifo_dc_dffpipe 0 22 cINg?E77O<hz=Di7TEVae0
 Z113 DEx4 work 18 lpm_fifo_dc_fefifo 0 22 coI3AkI4DgMALDSma;<^e2
 R87
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -949,7 +949,7 @@ VeWgFAFemn?D=h]a^PZehk3
 !s100 PDb]li^N1PHDdh=I[ba6]2
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -959,11 +959,11 @@ R14
 R15
 Abehavior
 R87
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 R106
 Z114 l7973
 Z115 L7904
@@ -971,7 +971,7 @@ Z116 VbH5jO^P_lU5gWL]jbCgmn0
 Z117 !s100 j:<]SUgH6JBRAVOEEVf2O3
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -980,13 +980,13 @@ R13
 R14
 R15
 Elpm_fifo_dc_dffpipe
+R0
 R1
-R2
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -995,7 +995,7 @@ VcINg?E77O<hz=Di7TEVae0
 !s100 e2M:gG3JUJ9Y`:V692AVi0
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1004,11 +1004,11 @@ R13
 R14
 R15
 Abehavior
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 R112
 Z118 l7609
 Z119 L7603
@@ -1016,7 +1016,7 @@ Z120 V50gziGn?D11FQ<QO:f_oe1
 Z121 !s100 H0i5XaWQ`QiX?N>2[9N762
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1025,13 +1025,13 @@ R13
 R14
 R15
 Elpm_fifo_dc_fefifo
+R0
 R1
-R2
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1040,7 +1040,7 @@ VcoI3AkI4DgMALDSma;<^e2
 !s100 m0mlBd3@K?ok6X::JQU:Z2
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1049,11 +1049,11 @@ R13
 R14
 R15
 Abehavior
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 R113
 Z122 l7703
 Z123 L7697
@@ -1061,7 +1061,7 @@ Z124 Vi28`;>k`eIJk[hR;`:kXL2
 Z125 !s100 5^nGRizO@l]Y_REUb53F`0
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1070,10 +1070,10 @@ R13
 R14
 R15
 Plpm_hint_evaluation
+R4
 R5
-R6
-R1
 R0
+R6
 R7
 R8
 l0
@@ -1083,7 +1083,7 @@ V_a<2DEEN737_g4J=TU7ZB2
 R9
 31
 b1
-R55
+R10
 !i10b 1
 R11
 R12
@@ -1093,15 +1093,15 @@ R14
 R15
 Bbody
 R90
+R4
 R5
-R6
 l0
 L337
 Z126 VKl7EYQSJFhHOz_jei>;9A2
 Z127 !s100 WW@cBDRoS6D^A]Kzf@WPT2
 R9
 31
-R55
+R10
 !i10b 1
 R11
 R12
@@ -1110,11 +1110,11 @@ R13
 R14
 R15
 Elpm_inpad
+R0
 R1
-R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1123,7 +1123,7 @@ VA?Qfhcl]QWlha5Ad7V8QW1
 !s100 lYzL?_A7:F@@SJ`:T[1b33
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1132,9 +1132,9 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
+R4
 R5
-R6
 Z128 DEx4 work 9 lpm_inpad 0 22 A?Qfhcl]QWlha5Ad7V8QW1
 Z129 l8528
 Z130 L8527
@@ -1142,7 +1142,7 @@ Z131 VC:QL22=BFbDGPY=`N`Wo^3
 Z132 !s100 B:_SO5`0FVUU=0JPB4did0
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1151,13 +1151,13 @@ R13
 R14
 R15
 Elpm_inv
+R0
 R1
 R2
-R3
 R21
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1175,11 +1175,11 @@ R13
 R14
 R15
 Alpm_syn
+R1
 R2
-R3
 R21
+R4
 R5
-R6
 Z133 DEx4 work 7 lpm_inv 0 22 ZzK7QNQOR];iJ2`=Lk_k?2
 l691
 L690
@@ -1196,13 +1196,13 @@ R13
 R14
 R15
 Elpm_latch
-R1
+R0
 R56
+R1
 R2
-R3
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1221,10 +1221,10 @@ R14
 R15
 Alpm_syn
 R56
+R1
 R2
-R3
+R4
 R5
-R6
 Z136 DEx4 work 9 lpm_latch 0 22 HHR03;k3lgV`X7CN46HD:2
 Z137 l3551
 Z138 L3504
@@ -1241,13 +1241,13 @@ R13
 R14
 R15
 Elpm_mult
-R1
+R0
 R90
+R1
 R2
-R3
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1266,10 +1266,10 @@ R14
 R15
 Alpm_syn
 R90
+R1
 R2
-R3
+R4
 R5
-R6
 Z141 DEx4 work 8 lpm_mult 0 22 dY7K_AKdS11>TkY]9F=iL2
 Z142 l2614
 Z143 L2578
@@ -1286,13 +1286,13 @@ R13
 R14
 R15
 Elpm_mux
+R0
 R1
-R2
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1310,11 +1310,11 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z146 DEx4 work 7 lpm_mux 0 22 YW3>g8BB=N:cE2`m5U>1@2
 Z147 l1132
 Z148 L1127
@@ -1331,11 +1331,11 @@ R13
 R14
 R15
 Elpm_or
+R0
 R1
-R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1353,9 +1353,9 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
+R4
 R5
-R6
 Z151 DEx4 work 6 lpm_or 0 22 T<D5O=0D_^lzBOIb1ED?n3
 l831
 L826
@@ -1372,11 +1372,11 @@ R13
 R14
 R15
 Elpm_outpad
+R0
 R1
-R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1385,7 +1385,7 @@ VM6H2]mIMnLbc[jgidU0`V2
 !s100 SChVYd3z[QN=joDoDdXlN0
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1394,9 +1394,9 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
+R4
 R5
-R6
 Z154 DEx4 work 10 lpm_outpad 0 22 M6H2]mIMnLbc[jgidU0`V2
 Z155 l8581
 Z156 L8580
@@ -1404,7 +1404,7 @@ Z157 Vf];@UQ@fAP0AnBEj3kB;U1
 Z158 !s100 a4]b_3^_4_;_mH3kCBi=82
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1413,15 +1413,15 @@ R13
 R14
 R15
 Elpm_ram_dp
-R1
+R0
 R56
 R87
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1441,11 +1441,11 @@ R15
 Alpm_syn
 R56
 R87
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z159 DEx4 work 10 lpm_ram_dp 0 22 S>lKC:DX?BCIjBS6NRDiJ1
 Z160 l4863
 Z161 L4844
@@ -1462,15 +1462,15 @@ R13
 R14
 R15
 Elpm_ram_dq
-R1
+R0
 R87
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1490,11 +1490,11 @@ R15
 Alpm_syn
 R87
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z164 DEx4 work 10 lpm_ram_dq 0 22 fYNC_CI^GCm4AnAhdhiDY1
 Z165 l4054
 Z166 L4039
@@ -1511,14 +1511,14 @@ R13
 R14
 R15
 Elpm_ram_io
-R1
+R0
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1537,11 +1537,11 @@ R14
 R15
 Alpm_syn
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z169 DEx4 work 10 lpm_ram_io 0 22 m8LhBA9mbSBbO^2=E]Snl3
 Z170 l5665
 Z171 L5644
@@ -1549,7 +1549,7 @@ Z172 VZZb27KbD=[fKV00i9C]3Q3
 Z173 !s100 i0=55FXWSAJCRoa1Oe2[m1
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1558,15 +1558,15 @@ R13
 R14
 R15
 Elpm_rom
-R1
+R0
 R87
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1575,7 +1575,7 @@ VFco]L<=HM_aODlP@HP<?_1
 !s100 ::C_l@R1M<dF2`=n@5VhY3
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1586,11 +1586,11 @@ R15
 Alpm_syn
 R87
 R56
-R2
+R1
 R21
-R3
+R2
+R4
 R5
-R6
 Z174 DEx4 work 7 lpm_rom 0 22 Fco]L<=HM_aODlP@HP<?_1
 Z175 l6484
 Z176 L6451
@@ -1598,7 +1598,7 @@ Z177 V?[Lo;ZUCBn?nO=cQ[i@C91
 Z178 !s100 Pn0>d3ZI:nCbDTf5;AjN43
 R9
 31
-R10
+R40
 !i10b 1
 R11
 R12
@@ -1607,13 +1607,13 @@ R13
 R14
 R15
 Elpm_shiftreg
-R1
+R0
 R56
+R1
 R2
-R3
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1632,10 +1632,10 @@ R14
 R15
 Alpm_syn
 R56
+R1
 R2
-R3
+R4
 R5
-R6
 Z179 DEx4 work 12 lpm_shiftreg 0 22 Ug>K6K:12oRPB90CP=>X=3
 Z180 l3893
 Z181 L3844
@@ -1652,11 +1652,11 @@ R13
 R14
 R15
 Elpm_xor
+R0
 R1
-R2
+R4
 R5
 R6
-R0
 R7
 R8
 l0
@@ -1674,9 +1674,9 @@ R13
 R14
 R15
 Alpm_syn
-R2
+R1
+R4
 R5
-R6
 Z184 DEx4 work 7 lpm_xor 0 22 BJGN0W6mYP2@>^hSPUjNR3
 l912
 L907

@@ -4,8 +4,8 @@ use IEEE.std_logic_1164.all;
 
 entity decoBCD is
     port (
-		  entradaBCD : in bit_vector (3 downto 0);
-        salidaBCD : out bit_vector (4 downto 0)  
+		  entradaBCD : in std_logic_vector (3 downto 0);
+        salidaBCD : out std_logic_vector (4 downto 0)  
     );
 end entity;
 
@@ -14,8 +14,8 @@ begin
 
 
     process (entradaBCD)
-        variable auxVectOut : bit_vector (4 downto 0);
-        variable auxVectIn : bit_vector (3 downto 0);
+        variable auxVectOut : std_logic_vector (4 downto 0);
+        variable auxVectIn : std_logic_vector (3 downto 0);
     begin
 
         auxVectIn := entradaBCD;

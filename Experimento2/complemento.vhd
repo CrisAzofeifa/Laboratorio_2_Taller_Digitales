@@ -26,7 +26,8 @@ architecture arch of complemento is
 
         if (borrowOut = '1') then 
 		  -- Complemento A2
-		  restaAux <= not(restaAux1(3)) & not(restaAux1(2)) & not(restaAux1(1)) & not(restaAux1(0));
+		  restaAux <= restaAux1(3) & restaAux1(2) & restaAux1(1) & restaAux1(0);
+		  restaAux <= not(restaAux);
 		  restaAux <= restaAux + 1;
 		  restaAux1 <= borrowOut & restaAux; 
         end if;

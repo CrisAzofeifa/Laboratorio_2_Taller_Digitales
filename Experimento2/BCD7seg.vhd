@@ -4,8 +4,8 @@ use IEEE.std_logic_1164.all;
 
 entity BCD7seg is
     port (
-	     entrada : in bit_vector (3 downto 0);
-        salida : out bit_vector (6 downto 0)
+	     entrada : in std_logic_vector (3 downto 0);
+        salida : out std_logic_vector (6 downto 0)
     );
 end entity;
 
@@ -14,8 +14,8 @@ begin
 
 
     process (entrada)
-        variable auxVectOut : bit_vector (6 downto 0);
-        variable auxVectIn : bit_vector (3 downto 0);
+        variable auxVectOut : std_logic_vector (6 downto 0);
+        variable auxVectIn : std_logic_vector (3 downto 0);
     begin
 
         auxVectIn := entrada;

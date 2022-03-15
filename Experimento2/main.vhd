@@ -1,54 +1,58 @@
 -- Top Level
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+use IEEE.NUMERIC_STD.all;
  
 entity main is
-	port(Ai, Bi: in bit_vector(3 downto 0);--Entradas 4 Bits
-			Bentrada : in BIT; -- Borrow de entrada
-			Display1, Display2, Display3: out bit_vector(6 downto 0));-- Salida 14 Bits, 3 Displays de 7 segmentos (Unidades, decenas y borrow)
+	port(Ai, Bi: in std_logic_vector(3 downto 0);--Entradas 4 std_logics
+			Bentrada : in std_logic; -- Borrow de entrada
+			Display1, Display2, Display3: out std_logic_vector(6 downto 0));-- Salida 14 std_logics, 3 Displays de 7 segmentos (Unidades, decenas y borrow)
 end entity;
 
 
 architecture structural of main is
 
 
-	component rest4bit is
-	port(A, B: in bit_vector(3 downto 0);-- 4 entradas
-			Bin: in BIT;
-			Sf: out bit_vector(4 downto 0));-- 5 salidas (1 borrow y 4 de resultado)
-	end component rest4bit;
+	component rest4std_logic is
+	port(A, B: in std_logic_vector(3 downto 0);-- 4 entradas
+			Bin: in std_logic;
+			Sf: out std_logic_vector(4 downto 0));-- 5 salidas (1 borrow y 4 de resultado)
+	end component rest4std_logic;
 	
 	component complemento is
-		port(resta: in bit_vector(4 downto 0);
-				restaComp: out bit_vector(4 downto 0));
+		port(resta: in std_logic_vector(4 downto 0);
+				restaComp: out std_logic_vector(4 downto 0));
 	end component complemento;
 	
 	component decoBCD is
     port (
-		  entradaBCD : in bit_vector (3 downto 0);
-        salidaBCD : out bit_vector (4 downto 0)  
+		  entradaBCD : in std_logic_vector (3 downto 0);
+        salidaBCD : out std_logic_vector (4 downto 0)  
     );
 	end component decoBCD;
 	
 	component BCD7seg is
     port (
-	     entrada : in bit_vector (3 downto 0);
-        salida : out bit_vector (6 downto 0)
+	     entrada : in std_logic_vector (3 downto 0);
+        salida : out std_logic_vector (6 downto 0)
     );
 	end component BCD7seg;
 	
-	--Signal Sfaux: bit_vector(4 downto 0);-- Señal de salida auxiliar
-	Signal Srcomp: bit_vector(4 downto 0); --Salida del restador
-	Signal Sr: bit_vector(4 downto 0); --Salida del restador
-	Signal auxVectOutDisplay : bit_vector (3 downto 0);
-	Signal auxVectOut : bit_vector (4 downto 0);
-	Signal auxVectUnidades : bit_vector (3 downto 0);
-	Signal auxVectDecenas : bit_vector (3 downto 0);
+	Signal Sfaux: std_logic_vector(4 downto 0);-- Señal de salida auxiliar
+	Signal Srcomp: std_logic_vector(4 downto 0); --Salida del restador
+	Signal Sr: std_logic_vector(4 downto 0); --Salida del restador
+	Signal auxVectOutDisplay : std_logic_vector (3 downto 0);
+	Signal auxVectOut : std_logic_vector (4 downto 0);
+	Signal auxVectUnidades : std_logic_vector (3 downto 0);
+	Signal auxVectDecenas : std_logic_vector (3 downto 0);
 
 	begin
 	 	 
-	 	--Sfauxmap: rest4bit
+	 	--Sfauxmap: rest4std_logic
 		--port map(A,B,Bin,sf=>sfaux);
 	
-		rest4: rest4bit
+		rest4: rest4std_logic
 			port map(A=>Ai,B=>Bi,Bin=>Bentrada,Sf=>Srcomp);
 
 		compA2: complemento

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition"
 
--- DATE "03/14/2022 01:46:04"
+-- DATE "03/15/2022 00:08:07"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -36,12 +36,12 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	main IS
     PORT (
-	Ai : IN STD.STANDARD.bit_vector(3 DOWNTO 0);
-	Bi : IN STD.STANDARD.bit_vector(3 DOWNTO 0);
+	Ai : IN std_logic_vector(3 DOWNTO 0);
+	Bi : IN std_logic_vector(3 DOWNTO 0);
 	Bentrada : IN std_logic;
-	Display1 : OUT STD.STANDARD.bit_vector(6 DOWNTO 0);
-	Display2 : OUT STD.STANDARD.bit_vector(6 DOWNTO 0);
-	Display3 : OUT STD.STANDARD.bit_vector(6 DOWNTO 0)
+	Display1 : BUFFER std_logic_vector(6 DOWNTO 0);
+	Display2 : BUFFER std_logic_vector(6 DOWNTO 0);
+	Display3 : BUFFER std_logic_vector(6 DOWNTO 0)
 	);
 END main;
 
@@ -146,12 +146,12 @@ SIGNAL \compA2|ALT_INV_restaComp[1]~3_combout\ : std_logic;
 
 BEGIN
 
-ww_Ai <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(Ai);
-ww_Bi <= IEEE.STD_LOGIC_1164.TO_STDLOGICVECTOR(Bi);
+ww_Ai <= Ai;
+ww_Bi <= Bi;
 ww_Bentrada <= Bentrada;
-Display1 <= IEEE.STD_LOGIC_1164.TO_BITVECTOR(ww_Display1);
-Display2 <= IEEE.STD_LOGIC_1164.TO_BITVECTOR(ww_Display2);
-Display3 <= IEEE.STD_LOGIC_1164.TO_BITVECTOR(ww_Display3);
+Display1 <= ww_Display1;
+Display2 <= ww_Display2;
+Display3 <= ww_Display3;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;

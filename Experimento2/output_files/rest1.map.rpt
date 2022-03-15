@@ -1,5 +1,5 @@
 Analysis & Synthesis report for rest1
-Mon Mar 14 01:45:29 2022
+Tue Mar 15 00:06:48 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 14 01:45:29 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 15 00:06:48 2022       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; rest1                                       ;
 ; Top-level Entity Name           ; main                                        ;
@@ -159,30 +159,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; rest1bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit.vhd    ;         ;
-; rest4bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd    ;         ;
-; decoBCD.vhd                      ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/decoBCD.vhd     ;         ;
-; BCD7seg.vhd                      ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/BCD7seg.vhd     ;         ;
-; main.vhd                         ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd        ;         ;
-; complemento.vhd                  ; yes             ; User VHDL File  ; C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; rest1bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd    ;         ;
+; rest4bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd    ;         ;
+; decoBCD.vhd                      ; yes             ; User VHDL File  ; C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/decoBCD.vhd     ;         ;
+; BCD7seg.vhd                      ; yes             ; User VHDL File  ; C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/BCD7seg.vhd     ;         ;
+; main.vhd                         ; yes             ; User VHDL File  ; C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd        ;         ;
+; complemento.vhd                  ; yes             ; User VHDL File  ; C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------+
@@ -212,33 +212,33 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+-------------+--------------+
-; |main                      ; 21 (0)              ; 0 (0)                     ; 0                 ; 0          ; 30   ; 0            ; |main                               ; main        ; work         ;
-;    |BCD7seg:BCD7seg1|      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|BCD7seg:BCD7seg1              ; BCD7seg     ; work         ;
-;    |complemento:compA2|    ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|complemento:compA2            ; complemento ; work         ;
-;    |decoBCD:decoBCDD|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|decoBCD:decoBCDD              ; decoBCD     ; work         ;
-;    |rest4bit:rest4|        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4bit:rest4                ; rest4bit    ; work         ;
-;       |rest1bit:rest1|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4bit:rest4|rest1bit:rest1 ; rest1bit    ; work         ;
-;       |rest1bit:rest3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4bit:rest4|rest1bit:rest3 ; rest1bit    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name    ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+----------------+--------------+
+; |main                        ; 21 (0)              ; 0 (0)                     ; 0                 ; 0          ; 30   ; 0            ; |main                                           ; main           ; work         ;
+;    |BCD7seg:BCD7seg1|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|BCD7seg:BCD7seg1                          ; BCD7seg        ; work         ;
+;    |complemento:compA2|      ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|complemento:compA2                        ; complemento    ; work         ;
+;    |decoBCD:decoBCDD|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|decoBCD:decoBCDD                          ; decoBCD        ; work         ;
+;    |rest4std_logic:rest4|    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4std_logic:rest4                      ; rest4std_logic ; work         ;
+;       |rest1std_logic:rest1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4std_logic:rest4|rest1std_logic:rest1 ; rest1std_logic ; work         ;
+;       |rest1std_logic:rest3| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|rest4std_logic:rest4|rest1std_logic:rest3 ; rest1std_logic ; work         ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                              ;
-+----------------------------------------------------+------------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal                ; Free of Timing Hazards ;
-+----------------------------------------------------+------------------------------------+------------------------+
-; complemento:compA2|restaAux[1]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
-; complemento:compA2|restaAux[2]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
-; complemento:compA2|restaAux[3]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
-; complemento:compA2|restaAux[0]                     ; rest4bit:rest4|rest1bit:rest3|Bout ; yes                    ;
-; Number of user-specified and inferred latches = 4  ;                                    ;                        ;
-+----------------------------------------------------+------------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                          ;
++----------------------------------------------------+------------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                            ; Free of Timing Hazards ;
++----------------------------------------------------+------------------------------------------------+------------------------+
+; complemento:compA2|restaAux[1]                     ; rest4std_logic:rest4|rest1std_logic:rest3|Bout ; yes                    ;
+; complemento:compA2|restaAux[2]                     ; rest4std_logic:rest4|rest1std_logic:rest3|Bout ; yes                    ;
+; complemento:compA2|restaAux[3]                     ; rest4std_logic:rest4|rest1std_logic:rest3|Bout ; yes                    ;
+; complemento:compA2|restaAux[0]                     ; rest4std_logic:rest4|rest1std_logic:rest3|Bout ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                                                ;                        ;
++----------------------------------------------------+------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -314,7 +314,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -324,61 +324,62 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Mon Mar 14 01:45:22 2022
+    Info: Processing started: Tue Mar 15 00:06:30 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off rest1 -c rest1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file rest1bit.vhd
-    Info (12022): Found design unit 1: rest1bit-structural File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit.vhd Line: 11
-    Info (12023): Found entity 1: rest1bit File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit.vhd Line: 6
+    Info (12022): Found design unit 1: rest1std_logic-structural File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd Line: 11
+    Info (12023): Found entity 1: rest1std_logic File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file rest1bit_tb.vhd
-    Info (12022): Found design unit 1: rest1bit_tb-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit_tb.vhd Line: 8
-    Info (12023): Found entity 1: rest1bit_tb File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest1bit_tb.vhd Line: 5
+    Info (12022): Found design unit 1: rest1std_logic_tb-arch File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit_tb.vhd Line: 8
+    Info (12023): Found entity 1: rest1std_logic_tb File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit_tb.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rest4bit.vhd
-    Info (12022): Found design unit 1: rest4bit-structural File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd Line: 10
-    Info (12023): Found entity 1: rest4bit File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd Line: 3
+    Info (12022): Found design unit 1: rest4std_logic-structural File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd Line: 13
+    Info (12023): Found entity 1: rest4std_logic File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file rest4bit_tb.vhd
-    Info (12022): Found design unit 1: rest4bit_tb-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit_tb.vhd Line: 7
-    Info (12023): Found entity 1: rest4bit_tb File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit_tb.vhd Line: 4
+    Info (12022): Found design unit 1: rest4std_logic_tb-arch File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit_tb.vhd Line: 7
+    Info (12023): Found entity 1: rest4std_logic_tb File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit_tb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decobcd.vhd
-    Info (12022): Found design unit 1: decoBCD-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/decoBCD.vhd Line: 12
-    Info (12023): Found entity 1: decoBCD File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/decoBCD.vhd Line: 5
+    Info (12022): Found design unit 1: decoBCD-arch File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/decoBCD.vhd Line: 12
+    Info (12023): Found entity 1: decoBCD File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/decoBCD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bcd7seg.vhd
-    Info (12022): Found design unit 1: BCD7seg-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/BCD7seg.vhd Line: 12
-    Info (12023): Found entity 1: BCD7seg File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/BCD7seg.vhd Line: 5
+    Info (12022): Found design unit 1: BCD7seg-arch File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/BCD7seg.vhd Line: 12
+    Info (12023): Found entity 1: BCD7seg File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/BCD7seg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
-    Info (12022): Found design unit 1: main-structural File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 10
-    Info (12023): Found entity 1: main File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 3
+    Info (12022): Found design unit 1: main-structural File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 14
+    Info (12023): Found entity 1: main File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file complemento.vhd
-    Info (12022): Found design unit 1: complemento-arch File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 15
-    Info (12023): Found entity 1: complemento File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 8
+    Info (12022): Found design unit 1: complemento-arch File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 15
+    Info (12023): Found entity 1: complemento File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 8
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Info (12128): Elaborating entity "rest4bit" for hierarchy "rest4bit:rest4" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 51
-Info (12128): Elaborating entity "rest1bit" for hierarchy "rest4bit:rest4|rest1bit:rest0" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/rest4bit.vhd Line: 21
-Info (12128): Elaborating entity "complemento" for hierarchy "complemento:compA2" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 54
-Warning (10492): VHDL Process Statement warning at complemento.vhd(27): signal "borrowOut" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at complemento.vhd(29): signal "restaAux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at complemento.vhd(30): signal "restaAux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 30
-Warning (10492): VHDL Process Statement warning at complemento.vhd(31): signal "borrowOut" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 31
-Warning (10492): VHDL Process Statement warning at complemento.vhd(31): signal "restaAux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 31
-Warning (10492): VHDL Process Statement warning at complemento.vhd(34): signal "restaAux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 34
-Warning (10631): VHDL Process Statement warning at complemento.vhd(20): inferring latch(es) for signal or variable "restaAux", which holds its previous value in one or more paths through the process File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
-Info (10041): Inferred latch for "restaAux[0]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
-Info (10041): Inferred latch for "restaAux[1]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
-Info (10041): Inferred latch for "restaAux[2]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
-Info (10041): Inferred latch for "restaAux[3]" at complemento.vhd(20) File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/complemento.vhd Line: 20
-Info (12128): Elaborating entity "decoBCD" for hierarchy "decoBCD:decoBCDD" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 57
-Info (12128): Elaborating entity "BCD7seg" for hierarchy "BCD7seg:BCD7seg1" File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 64
+Info (12128): Elaborating entity "rest4std_logic" for hierarchy "rest4std_logic:rest4" File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 55
+Info (12128): Elaborating entity "rest1std_logic" for hierarchy "rest4std_logic:rest4|rest1std_logic:rest0" File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd Line: 24
+Info (12128): Elaborating entity "complemento" for hierarchy "complemento:compA2" File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at complemento.vhd(27): signal "borrowOut" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at complemento.vhd(29): signal "restaAux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at complemento.vhd(30): signal "restaAux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at complemento.vhd(31): signal "restaAux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at complemento.vhd(32): signal "borrowOut" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at complemento.vhd(32): signal "restaAux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at complemento.vhd(35): signal "restaAux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at complemento.vhd(20): inferring latch(es) for signal or variable "restaAux", which holds its previous value in one or more paths through the process File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[0]" at complemento.vhd(20) File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[1]" at complemento.vhd(20) File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[2]" at complemento.vhd(20) File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 20
+Info (10041): Inferred latch for "restaAux[3]" at complemento.vhd(20) File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/complemento.vhd Line: 20
+Info (12128): Elaborating entity "decoBCD" for hierarchy "decoBCD:decoBCDD" File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 61
+Info (12128): Elaborating entity "BCD7seg" for hierarchy "BCD7seg:BCD7seg1" File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 68
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Display2[0]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display2[4]" is stuck at GND File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display2[5]" is stuck at GND File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display3[1]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display3[2]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display3[3]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display3[4]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display3[5]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
-    Warning (13410): Pin "Display3[6]" is stuck at VCC File: C:/Users/azofe/Desktop/Pruebas (1)/Pruebas/main.vhd Line: 6
+    Warning (13410): Pin "Display2[0]" is stuck at VCC File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display2[4]" is stuck at GND File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display2[5]" is stuck at GND File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display3[1]" is stuck at VCC File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display3[2]" is stuck at VCC File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display3[3]" is stuck at VCC File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display3[4]" is stuck at VCC File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display3[5]" is stuck at VCC File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
+    Warning (13410): Pin "Display3[6]" is stuck at VCC File: C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/main.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -386,10 +387,10 @@ Info (21057): Implemented 51 device resources after synthesis - the final resour
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 21 output pins
     Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4902 megabytes
-    Info: Processing ended: Mon Mar 14 01:45:29 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Tue Mar 15 00:06:48 2022
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:36
 
 
