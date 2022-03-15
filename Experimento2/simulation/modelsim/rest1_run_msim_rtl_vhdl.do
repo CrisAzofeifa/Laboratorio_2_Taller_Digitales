@@ -50,12 +50,11 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd}
-vcom -93 -work work {C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd}
+vcom -93 -work work {C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento.vhd}
 
-vcom -93 -work work {C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit_tb.vhd}
+vcom -93 -work work {C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento_tb.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs="+acc"  rest4test
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs="+acc"  comp
 
 add wave *
 view structure

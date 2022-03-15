@@ -7,117 +7,88 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/simulation/modelsim
-Erest1bit
-Z1 w1647307691
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z0 dC:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/simulation/modelsim
+Ecomplemento
+Z1 w1647334599
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd
-Z5 FC:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd
+Z7 8C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento.vhd
+Z8 FC:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento.vhd
 l0
-L6
-V06Ym`SIZRUDX>f:XG_2`C3
-!s100 UXddQJkW0jn^Thoknm;@O0
-Z6 OV;C;10.5b;63
+L8
+VFci1AJE@WCF_9N5c0LSSe3
+!s100 PJ]:QG6`Sh<?N_R4<kMdD0
+Z9 OV;C;10.5b;63
 31
-Z7 !s110 1647322833
+Z10 !s110 1647335397
 !i10b 1
-Z8 !s108 1647322833.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd|
-Z10 !s107 C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest1bit.vhd|
+Z11 !s108 1647335397.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento.vhd|
+Z13 !s107 C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
-Astructural
-R2
-R3
-DEx4 work 8 rest1bit 0 22 06Ym`SIZRUDX>f:XG_2`C3
-l14
-L11
-VnPGna:fcGCz51bkj_U7A61
-!s100 nNfefF3hm6D]zKJZfhf>^1
-R6
-31
-R7
-!i10b 1
-R8
-R9
-R10
-!i113 1
-R11
-R12
-Erest4bit
-R1
-R0
-Z13 8C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd
-Z14 FC:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd
-l0
-L3
-VF1iU@5;Q1UjU9c;cC;UBC0
-!s100 7nR;kZN@2E2m6zf3d_9FC3
-R6
-31
-R7
-!i10b 1
-R8
-Z15 !s90 -reportprogress|300|-93|-work|work|C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd|
-Z16 !s107 C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit.vhd|
-!i113 1
-R11
-R12
-Astructural
-DEx4 work 8 rest4bit 0 22 F1iU@5;Q1UjU9c;cC;UBC0
-l18
-L10
-V5jVme_9M^boMC?@DFh>eO3
-!s100 PSeg`h;Ym7_0iW07?ll]j1
-R6
-31
-R7
-!i10b 1
-R8
-R15
-R16
-!i113 1
-R11
-R12
-Erest4bit_tb
-Z17 w1647322637
-R2
-R3
-R0
-Z18 8C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit_tb.vhd
-Z19 FC:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit_tb.vhd
-l0
-L4
-Vfk3b3aQiQeXCK??V8@^2h1
-!s100 6R0<0la_B_oOBPUG=Fb240
-R6
-31
-R7
-!i10b 1
-R8
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit_tb.vhd|
-Z21 !s107 C:/Users/USUARIO/Desktop/Laboratorio2/Experimento2/rest4bit_tb.vhd|
-!i113 1
-R11
-R12
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
 Aarch
 R2
 R3
-DEx4 work 11 rest4bit_tb 0 22 fk3b3aQiQeXCK??V8@^2h1
-l19
-L7
-VAkA;VWfNW7AWNRBne<^0:0
-!s100 >>ifmP5bU^30oPzii6:k93
+R4
+R5
 R6
+DEx4 work 11 complemento 0 22 Fci1AJE@WCF_9N5c0LSSe3
+l19
+L15
+VXbbj@VbCGnTXdcol23XF=3
+!s100 kIHo^dmJzz7iZcY^=2mjJ0
+R9
 31
-R7
+R10
 !i10b 1
-R8
-R20
-R21
-!i113 1
 R11
 R12
+R13
+!i113 1
+R14
+R15
+Ecomplemento_tb
+Z16 w1647335364
+R5
+R6
+R0
+Z17 8C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento_tb.vhd
+Z18 FC:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento_tb.vhd
+l0
+L5
+V_geVeUjOH<B6X_851kfmc3
+!s100 goVfUo=75L^WKOHBm]E2>1
+R9
+31
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento_tb.vhd|
+Z20 !s107 C:/Users/azofe/Desktop/Semestre I-2022/Taller De Digitales/Laboratorio 2/Laboratorio_2_Taller_Digitales/Experimento2/complemento_tb.vhd|
+!i113 1
+R14
+R15
+Aarch
+R5
+R6
+DEx4 work 14 complemento_tb 0 22 _geVeUjOH<B6X_851kfmc3
+l18
+L8
+Vg`fY2I1K`>c`DH7TS?M>22
+!s100 afKTQd8Vgo?i`iPmdH<Lc3
+R9
+31
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 1
+R14
+R15

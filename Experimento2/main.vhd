@@ -75,7 +75,7 @@ architecture structural of main is
 			port map(entrada=>auxVectOutDisplay,salida=>Display3);
 		
 
-	 negPos: process (Sr) is
+	 negPos: process (Sr, auxVectOutDisplay) is
 
     begin
 			-- negativo

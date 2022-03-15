@@ -14,27 +14,19 @@ end entity;
 
 architecture arch of complemento is	
 	
-		signal borrowOut : std_logic;
-		signal restaAux : std_logic_vector (3 downto 0);
-		signal restaAux22 : std_logic_vector (3 downto 0);
-		signal restaAux23 : std_logic_vector (3 downto 0);
-		signal restaAux1 : std_logic_vector (4 downto 0);
-    begin process (resta)
+	 signal borrowOut : std_logic;
+	 signal restaAux : std_logic_vector(4 downto 0);
+    begin process (resta, borrowOut, restaAux)
 
     begin
 	 
-        borrowOut <= resta(4);
-		  restaAux1 <= resta;
-
+		  borrowOut <= resta(4);
+		  restaAux <= resta;
+		  
         if (borrowOut = '1') then 
-		  -- Complemento A2
-		  restaAux <= restaAux1(3) & restaAux1(2) & restaAux1(1) & restaAux1(0);
-		  restaAux22 <= not(restaAux);
-		  restaAux23 <= restaAux22 + "0001";
-		  restaAux1 <= borrowOut & restaAux23; 
+		  restaAux <= borrowOut & ((not(resta(3)) & not(resta(2)) & not(resta(1)) & not(resta(0))) + 1);
         end if;
-
-        restaComp <= restaAux1;
+		  restaComp <= restaAux;
 
     end process;	
 	

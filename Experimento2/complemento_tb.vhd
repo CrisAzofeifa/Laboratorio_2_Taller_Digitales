@@ -1,4 +1,4 @@
--- Test Bench de complemento
+	-- Test Bench de complemento
 library IEEE;
 use IEEE.std_logic_1164.all;
 
@@ -24,9 +24,8 @@ begin
 
     generate_signals : process
     begin
-        testVectEntrada <= "01000"; wait for 10 ns;
-        testVectEntrada <= "11001"; wait for 10 ns;
-        testVectEntrada <= "01110"; wait for 10 ns;
+        testVectEntrada <= "00001"; wait for 10 ns;
+		  
         wait;
     end process;
 
